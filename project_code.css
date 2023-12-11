@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'Infinity';
+	src: url('MADEINFINITY-Regular.otf') format('otf');
+}
+@font-face {
+	font-family: 'Sanchez';
+	src: url('Sanchezregular.otf') format('otf');
+}
+/*
+  
+   Author: Rachel Liska
+   Date: 10/29/2023
+   
+   Filename: project_code.css
+
+*/
+
+/* Page Body Styles */
+body {
+	font-family: "Infinity", sans-serif;
+	color: #444D64;
+}
+
+/* Header and Horizontal Navigation List Styles */
+header {
+	background-color: #FFFFFF;
+}
+header h1 {
+	font-family: "Sanchez", slab-serif;
+	font-size: 3.0em;
+	color: #BD3426;
+	text-align: center;
+}
+nav {
+	text-align: center;
+	font-size: 1.4em;
+}
+nav ul {
+	background-color: #FFFFFF;
+	text-align: center;
+}
+nav li a {
+	color: #444D64;
+	text-align: center;
+	text-decoration: none;
+}  
+nav li a:hover:not(.active) {
+  color: #BD3426;
+}
+.active {
+	color: #BD3426;
+}   
+.banner {
+	overlay: 
+}
+/* Main Section Styles */
+h2 {
+	font-family: "Sanchez", slab-serif;
+}
+section h2 {
+	color: #444D64;
+	font-family: "Sanchez", slab-serif;
+	font-size: 3.0em;
+}
+article h2 {
+	color: #444D64;
+	font-family: "Sanchez", slab-serif;
+	font-size: 2.0em;
+}
+#intro {
+	background-color: #FFE8DE;
+}
+
+/* Product Styles */
+div.products {
+   padding: 10px;
+}
+h3.productTitle {
+	font-family: "Sanchez", slab-serif;
+	font-size: 2.0em;
+	font-weight: bold;
+	margin: 0.3em 0;
+}
+section#productContainer {
+	background-color: #FFE8DE;
+}
+div.products h1 {
+   font-family: "Sanchez", slab-serif;
+   font-size: 1.8em;
+   font-weight: normal;
+   margin: 0.3em 0;
+   text-align: center;
+}
+div.products p {
+   font-size: 1.4em;
+   margin-bottom: 1em;
+   line-height: 1.2;
+}
+div.about {
+   font-size: 1.4em;
+   margin-bottom: 1em;
+   line-height: 1.2;
+}
+p.subtext {
+	text-align: center;
+	opacity: 50%;
+	font-style: italic;
+}
+p.cost {
+	color: #BD3426;
+	text-align: right;
+	padding-top: 10px;
+}
+
+/* Menu Styles */
+div.menu {
+	background: #ffc857;
+}
+
+div.menu h1 {
+	font-family: "Sanchez", slab-serif;
+	font-size: 1.8em;
+	font-weight: bold;
+}
+p.description {
+	opacity: 50%;
+	font-style: italic;
+}
+.menu table th {
+	font-family: "Sanchez", slab-serif;
+	text-align: left;
+	font-size: 0.8em;
+	opacity: 75%;
+}
+.menu table {
+	font-family: "Infinity", sans-serif;
+	font-size: 1.4em;
+}
+
+/* Button Styles */
+button {
+	background-color: #FFC857;
+	border: none;
+	color:  #444D64;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+	transition-duration: 0.4s;
+}
+button:hover {
+	background-color: #BD3426;
+}
+a {
+	text-decoration: none;
+}
+#shopButton {
+}
+
+/* Contact Styles */
+section#contactContainer h3 {
+	font-family: "Sanchez", slab-serif;
+	text-align: center;
+	font-size: 2.0em;
+}
+.contactForm h3 {
+	font-family: "Sanchez", slab-serif;
+	text-align: center;
+	font-size: 2.0em;
+}
+section#contactContainer {
+	background-color: #FFE8DE;
+}
+.contactInformation p {
+	font-family: "Infinity", sans-serif;
+	font-size: 1.4em;
+}
+.formContainer {
+	font-family: "Infinity", sans-serif;
+	font-size: 1.4em;
+}
+input[type=submit] {
+	background-color: #FFC857;
+	border: none;
+	color:  #444D64;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: "Infinity", sans-serif;
+	font-weight: bold;
+	transition-duration: 0.4s;
+}
+input[type=text], select, textarea {
+	font-family: "Infinity", sans-serif;
+}
+article a {
+	text-decoration: none;
+	color: #BD3426;
+}
+
+/* Footer Styles */
+section.footer {
+	background-color: #BD3426;
+	color: #FFFFFF;
+	padding:50px 0;
+}
+section.footer h3 {
+	font-family: "Sanchez", slab-serif;
+	font-weight:bold;
+	font-size:1.2em;
+}
+section.footer .copyright {
+	opacity:0.3;
+	font-size:1em;
+}

@@ -1,0 +1,421 @@
+@charset "utf-8";
+
+/*
+  
+   Author: Rachel Liska
+   Date: 10/29/2023
+   
+   Filename: project_layout.css
+
+*/
+
+/*Page Body Styles */
+html, body {
+    height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+    padding: 0;
+}
+/* Image Styles */
+img {
+  display: block;
+  width: 100%;
+}
+.banner {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+.cafe {
+    width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.contactImg {
+	width: 40%;
+	margin-left: 10%;
+	margin-right: auto;
+}
+.item img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+
+/* Horizontal Navigation Styles */
+header {
+  position: sticky;
+  overflow: auto;
+  top: 0;
+  width: 100%;
+  padding-top: 15px;
+  z-index: 1;
+}
+header h1 {
+	margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    display: inline-block;
+}
+nav ul {
+    display:inline-block;
+    float:right;
+	list-style-type: none;
+	padding-right: 20px;
+}
+nav li {
+    float: left;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+/*Grid Styles */
+section#intro {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+div.about {
+	padding-left: 150px;
+}
+h2 {
+	text-align: center;
+}
+section#sub {
+	display: grid;
+	grid-gap: 2rem;
+	padding: 25px;
+	grid-template-columns: repeat(3, 0.5fr);
+}
+section#gridProducts {
+	display: grid;
+	grid-gap: 5rem;
+	padding: 25px;
+	grid-template-columns: repeat(3, 0.5fr);
+	margin-bottom: 50px;
+}
+div.contactImg {grid-area: 1 / 1 / 2 / 2;}
+div.contactInformation {grid-area: 1 / 2 / 3 / 3;}
+
+section#contactContainer {
+	display: grid;
+	grid-template-columns: 1, 1fr;
+	grid-template-rows: 1, 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+#sumCheckboxes{
+  color: #444D64;
+  font-size: 1.4em;
+  width: 100%;
+  background: #FFE8DE;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Product Styles */
+div.products {
+	min-height: 400px;
+	outline: 1px;
+	background-color: white;
+}
+div.products img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+h3.productTitle {
+	padding-left: 50px;
+	padding-top: 25px;
+}
+
+/* Button Styles */
+button {
+	margin: 0 auto;
+	display: block;
+	cursor: pointer;
+}
+section#main button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 300px;
+	border: 3px;
+	margin-bottom: 50px;
+}
+
+/* Menu Styles */
+div.menu {
+	margin-left: 50px;
+	margin-right: 50px;
+	padding-left: 20px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-bottom: 100px;
+}
+.menu img {
+	padding-top: 50px;
+	float: right;
+	width: 45%;
+	padding-right: 20px;
+}
+div.menu h1 {
+	margin: 0.3em 0;
+	padding-top: 20px;
+}
+p.description {
+	position: relative;
+	top: -10px;
+}
+.menu table {
+	width: 50%;
+}
+
+/* Checkout Styles */
+#cart {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+#cart input[type="checkbox"][id^="myCheckbox"] {
+  display: none;
+}
+
+#cart label {
+  border: 1px solid #fff;
+  padding: 10px;
+  display: block;
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#cart label:before {
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+#cart label img {
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+#cart :checked + label {
+  border-color: #ddd;
+}
+
+#cart :checked + label:before {
+  content: "✓";
+  background-color: grey;
+  transform: scale(1);
+}
+
+#cart :checked + label img {
+  transform: scale(0.9);
+  /* box-shadow: 0 0 5px #333; */
+  z-index: -1;
+}
+label, output {
+  display: block;
+  }
+output {
+  color: red;
+  }
+
+#payment {
+	margin-left: 25%;
+	margin-right: 25%;
+}
+#orderOptions {
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+/* Contact Styles */
+.contactForm {
+	text-align: center;
+	padding: 25px;
+	margin: 100px;
+}
+form {
+	text-align: left;
+}
+.formContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	padding: 20px;
+}
+.contactInformation {
+	margin-left: -50%;
+	padding-left: 100px;
+	margin-right: 25%;
+}
+section#contactContainer {
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.contactInformation article h3 {
+	margin-left: -15%;
+}
+input[type=text], select, textarea {
+	 width: 100%;
+	 padding: 12px;
+	 border: 1px solid #ccc;
+	 border-radius: 4px;
+	 box-sizing: border-box;
+	 margin-top: 6px;
+	 margin-bottom: 16px;
+	 resize: vertical;
+}
+input {
+	width: 100%;
+	 padding: 12px;
+	 border: 1px solid #ccc;
+	 border-radius: 4px;
+	 box-sizing: border-box;
+	 margin-top: 6px;
+	 margin-bottom: 16px;
+	 resize: vertical;
+}
+input[type=submit] {
+	padding: 12px 20px;
+	cursor: pointer;
+	height: 50px;
+	width: 100%;
+	border: 3px;
+	margin-bottom: 50px;
+}
+input[type=submit]:hover {
+	background-color: #BD3426;
+}
+.contactInformation p {
+	padding-top: 25px;
+}
+
+/* Footer Styles */
+section.footer {
+	padding:50px 0;
+}
+section.footer h3 {
+  margin-top:0;
+  margin-bottom:12px;
+}
+.footer-text {
+	text-align: center;
+}
+section.footer .copyright {
+  text-align:center;
+  padding-top:24px;
+  margin-bottom:0;
+}
+
+/* ===============================
+	Mobile Devices: 0 to 480px 
+   ===============================
+*/
+@media only screen and (max-width: 600px) {
+	
+	.cafe {
+    width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	div.about {
+	padding-left: 10px;
+	}
+	
+	/*Flex Styles */
+	section#intro {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	}
+	section#sub {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	padding: 15px;
+	margin-bottom: 50px;
+	}
+	section#gridProducts {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	padding: 25px;
+	margin-bottom: 50px;
+	}
+	.products {
+	width: 100%;
+	height: auto;
+	outline: 1px;
+	background-color: white;
+	}
+	
+	/* Contact Styles */
+	section#contactContainer {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	}
+	.contactImg {
+    width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	.contactForm {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.contactInformation {
+	margin-left: 0;
+	padding-left: 25px;
+	margin-right: 0%;
+	}
+	.contactInformation article h3 {
+	margin-left: 0%;
+	}
+	
+	/* Menu Styles */
+	.menu {
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-bottom: 50px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.menu img {
+		float: none;
+		width: 100%;
+	}
+}
